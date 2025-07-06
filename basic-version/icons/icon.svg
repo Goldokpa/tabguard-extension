@@ -1,0 +1,13 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="128" height="128" rx="24" fill="url(#gradient)"/>
+<path d="M96.8667 41.6001C96.8667 37.0001 94.6667 34.2668 88.6667 34.2668H57.7333C51.7333 34.2668 49.5333 37.0001 49.5333 41.6001V86.4001C49.5333 91.0001 51.7333 93.7334 57.7333 93.7334H88.6667C94.6667 93.7334 96.8667 91.0001 96.8667 86.4001V41.6001Z" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.4004 53.0666H77.8671" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M68.4004 66.2666H82.5337" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M31.2002 41.6001V86.4001C31.2002 91.0001 33.4002 93.7334 39.4002 93.7334H49.5335" stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<defs>
+<linearGradient id="gradient" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+<stop stop-color="#4F46E5"/>
+<stop offset="1" stop-color="#A855F7"/>
+</linearGradient>
+</defs>
+</svg>  

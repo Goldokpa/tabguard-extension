@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart TabGuard</title>
+  <link rel="stylesheet" href="../styles/popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart TabGuard</h1>
+      <div class="ai-status" id="aiStatus">
+        <span class="status-indicator" id="statusIndicator"></span>
+        <span class="status-text" id="statusText">Checking AI features...</span>
+      </div>
+    </header>
+
+    <section class="current-site">
+      <h2>Current Site</h2>
+      <p id="currentSite">Loading...</p>
+      <button id="toggleProtectionBtn" class="btn btn-primary">Protect this Site</button>
+    </section>
+
+    <section class="ai-features" id="aiFeatures">
+      <h2>AI Features</h2>
+      <div class="feature-toggle">
+        <label for="aiToggle">Enable AI Summarization</label>
+        <input type="checkbox" id="aiToggle" class="toggle">
+      </div>
+      <div class="feature-toggle">
+        <label for="autoSummarizeToggle">Auto-summarize tabs</label>
+        <input type="checkbox" id="autoSummarizeToggle" class="toggle">
+      </div>
+      <button id="generateSummaryBtn" class="btn btn-secondary">Generate Summary</button>
+    </section>
+
+    <section class="tab-summary" id="tabSummary">
+      <h2>Tab Summary</h2>
+      <div class="summary-content" id="summaryContent">
+        <p class="no-summary">No summary available for this tab.</p>
+      </div>
+      <div class="summary-meta" id="summaryMeta"></div>
+    </section>
+
+    <section class="smart-recommendations" id="smartRecommendations">
+      <h2>Smart Recommendations</h2>
+      <div class="recommendations" id="recommendations">
+        <p>Loading recommendations...</p>
+      </div>
+    </section>
+
+    <footer>
+      <button id="openOptionsBtn" class="btn btn-link">Settings</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html> 

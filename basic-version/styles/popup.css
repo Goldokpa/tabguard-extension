@@ -1,0 +1,287 @@
+/* Popup Styles for Smart TabGuard */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+  background: #f8f9fa;
+}
+
+.container {
+  width: 380px;
+  min-height: 500px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ai-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+}
+
+.status-indicator.available {
+  background: #4caf50;
+}
+
+.status-indicator.unavailable {
+  background: #ff9800;
+}
+
+.status-indicator.error {
+  background: #f44336;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+section h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Current Site */
+.current-site p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 15px;
+  word-break: break-all;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5a6fd8;
+}
+
+.btn-primary.protected {
+  background: #f44336;
+}
+
+.btn-primary.protected:hover {
+  background: #d32f2f;
+}
+
+.btn-secondary {
+  background: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.btn-secondary:hover {
+  background: #e9ecef;
+}
+
+.btn-secondary:disabled {
+  background: #f8f9fa;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+}
+
+.btn-link {
+  background: none;
+  color: #667eea;
+  padding: 8px 0;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+/* Feature Toggles */
+.feature-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.feature-toggle label {
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background: #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  appearance: none;
+  outline: none;
+}
+
+.toggle:checked {
+  background: #667eea;
+}
+
+.toggle::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.toggle:checked::before {
+  transform: translateX(20px);
+}
+
+/* Tab Summary */
+.summary-content {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 15px;
+  margin-bottom: 10px;
+  min-height: 60px;
+}
+
+.summary-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.no-summary {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+}
+
+.summary-meta {
+  font-size: 11px;
+  color: #666;
+}
+
+.summary-info {
+  display: flex;
+  gap: 15px;
+}
+
+.summary-type,
+.summary-length,
+.summary-time {
+  background: #e9ecef;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Smart Recommendations */
+.recommendations {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recommendation {
+  background: #f8f9fa;
+  border-radius: 6px;
+  padding: 12px;
+  border-left: 4px solid #667eea;
+}
+
+.recommendation.protection {
+  border-left-color: #ff9800;
+}
+
+.recommendation.ai {
+  border-left-color: #4caf50;
+}
+
+.recommendation p {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+  padding: 15px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  section {
+    padding: 15px;
+  }
+} 
