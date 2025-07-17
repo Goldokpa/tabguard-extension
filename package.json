@@ -1,0 +1,19 @@
+{
+  "name": "smart-tabguard-extension",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd basic-version && tsc",
+    "build:watch": "cd basic-version && tsc --watch",
+    "dev": "npm run build:watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["chrome-extension", "tab-management", "ai", "summarizer"],
+  "author": "",
+  "license": "ISC",
+  "description": "Smart TabGuard Extension with AI-powered summarization features",
+  "devDependencies": {
+    "@types/chrome": "^0.0.328",
+    "typescript": "^5.8.3"
+  }
+}
