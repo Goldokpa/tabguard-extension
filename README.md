@@ -15,7 +15,7 @@ Smart TabGuard is a Chrome extension designed to help users avoid losing importa
 
 ## Tech Stack
 - **Manifest V3**
-- **TypeScript**
+- **JavaScript**
 - **Chrome APIs:** `chrome.tabs`, `chrome.storage`, `chrome.runtime`
 - **HTML/CSS** for popup and options UI
 
